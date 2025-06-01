@@ -1,0 +1,33 @@
+
+# Rango de movimiento del Falcon
+
+teleop_franka:
+  base_x: -1.5
+  base_y: 0.2
+  base_z: 0.5
+  open_gripper_button: 1
+  close_gripper_button: 2
+  grasp_gripper_button: 3
+  grasp_force: 0.5 # N
+
+  gripper_initial_width: 0.03
+  gripper_inc_button: 0
+  gripper_dec_button: 1
+  gripper_action_button: 2
+  gripper_move_speed: 0.1
+  grasp_speed: 0.1
+  grasp_force: 5.0
+  grasp_epsilon_inner: 0.005
+  grasp_epsilon_outer: 0.005
+
+  # Multiplicador del espacio de trabajo
+  Kx: 15
+  Ky: 15
+  Kz: 15
+
+teleop_falcon:
+  K: 0.03 # Ganancia de fuerza
+  threshold: 0.5 # Umbral mínimo para aplicar fuerza
+
+
+
